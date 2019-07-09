@@ -1,0 +1,511 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.topo{
+    height:30px;
+    background-color: #333333;
+    color:#FFF;
+}
+.topo-int{
+    width: 100%;
+    max-width: 1040px;
+    height: 30px;
+    margin: auto;
+}
+.topo-left{
+    width: 50%;
+    height: 30px;
+    float: left;
+}
+.topo-left ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.topo-left ul li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-left:8px;
+	margin-right:8px;
+}
+.topo-left ul li:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.topo-left ul li a{
+    text-decoration: none;
+    color: white;
+}
+.topo-left ul li a:active{
+    color: blue;
+}
+.ativo{
+    color: blue;
+}
+.topo-right{
+    width: 100%;
+    height: 28px;
+    text-align:right;
+    margin-top: 2px;
+}
+.topo-right a{
+    float: right;
+}
+.topo-right input{
+    float: right;
+    padding-right: 24px;
+}
+.topo-busca{
+    width: 110px;
+    height: 26px;
+    outline: 0;
+    float: right;
+    margin-left: 5px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.topo2{
+    height: 95px;
+}
+.topo2-int{
+    max-width: 1040px;
+    height: 95px;
+    line-height: 70px;
+    margin: auto;
+}
+.logo{
+    width: 230px;
+    height: 85px;
+    margin-top: 7px;
+    float: left;
+}
+.topo2-int .banner{
+    width: 650px;
+    height: 80px;
+    float: right;
+    margin-top: 7px;
+    background-color: red;
+}
+.menu{
+    height: 40px;
+    background-color: red;
+}
+.menu-mobile{
+    display: none;
+}
+.menu-int{
+    width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;   
+}
+.menu-int ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-int li{
+    float: left;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+}
+.menu-int a{
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+}
+.menu-int a:hover{
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.submenu{
+    width: 150px;
+    background-color: red;
+    position: absolute;
+    display: none;
+}
+
+/*Fazendo o Menu DropDown aparecer apenas com CSS:
+Na div interna do Menu, quando o ponteiro passar pelo <li>, 
+o item de classe "submenu" deixa de ter a configuraÃ§Ã£o
+display:none, que esconde o menu dropdown e passa a ter
+a configuraÃ§Ã£o display:block, que mostra o menu dropdown. */
+
+.menu-int li:hover .submenu{
+    display: block;
+}
+.submenu-item{
+    width: 150px;
+    margin: auto;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.submenu-item:hover{
+    background-color: #FF5555;
+}
+.ultimas_noticias{
+    height: 40px;
+}
+.ultimas_noticias_int{
+    max-width: 1040px;
+    height: 40px;
+    width: 100%;
+    margin: auto;
+}
+.ultimas_noticias_area{
+    height: 28px;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+}
+.ultimas_noticias_titulo{
+    background-color: red;
+    color: white;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.ultimas_noticias_noticia{
+    display: inline-block;
+    height: 28px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 28px;
+}
+.container-int{
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    height: 10px; 
+}
+.container-int-esq{
+    width: 753px;
+    float: left;
+}
+.slide-bolinhas{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.bolinha{
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.slide-show{
+    height: 335px;
+    overflow: hidden; /*Codigo que esconde o conteudo que ultrapassa o valor limitado pelo quadrado. UTILIZADO PARA FAZER O SLIDE-SHOW*/
+    margin-bottom: 20px;
+}
+.slide-show-area{
+    height: 335px;
+    width: 100000px;
+    transition: all 1s; /*Transições dos slides: "all 1s" significa que todas as transiÃ§Ãµes duram 1 segundo.*/
+}
+.slide{
+    height: 335px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* "Cover" serve para aumentar largura e altura da imagem de fundo proporcionalmente para que ela preencha toda a Ã¡rea dessa div chamada "slide" */
+}
+.slide-info{
+    height: 70px;
+    background-image: url('../images/slide-show-bg.png');
+    background-size: auto 70px; /* "auto" na largura e "70px" na altura*/
+    background-repeat: repeat; /* Estou repetindo, atÃ© completar a div, uma imagem que possui efeito degradê com 1px de largura e 60px de altura. Segundo o professor, fazer a repeticÃ£o dessa imagem varias vezes torna o site mais leve do que se eu fizesse uma imagem do tamanho todo da tela. */
+    margin-top: 265px;
+}
+.slide-info-titulo{
+    font-size: 20px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.slide-info-subtitulo{
+    font-size: 13px;
+    color: white;
+    padding-left: 20px;
+}
+.noticia-area1{
+    width: 430px;
+    float: left;
+    height: auto;
+    margin-top: 7px;
+}
+.noticia-area2{
+    width: 320px;
+    float: right;
+    height: 420px;
+    margin-top: 30px;
+}
+
+.container-int-dir{
+    width: 257px;
+    min-height: 200px;
+    float: right;
+}
+
+/* Widgets são os blocos de conteÃºdo do site que possuem o mesmo padrÃ£o.
+   Todos eles tem conteÃºdo, tÃ­tulo, e outras caracteristicas em comum,
+   como borda, cor, fonte do tÃ­tulo, etc. */
+
+.widget{
+    background-color: white;
+    border: 1px solid gray;
+    margin-bottom: 12px;
+
+}
+.widget-conteudo{
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.widget-titulo{
+    height: 30px;
+    border-bottom: 1px solid gray;
+    background-color: #dddddd;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.noticia-item{
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    height: 86px;   
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.noticia-imagem{
+    margin-left: 10px;
+}
+.noticia-item-grande .noticia-imagem{
+    width: 384px;
+    height: 222px;
+}
+.noticia-item-grande .noticia-imagem img{
+    width: 384px;
+    height: 222px;
+}
+.noticia-item-grande .noticia-titulo{
+    font-size: 30px;
+    width: 384px;
+    margin-top: 10px;
+    text-align: left;
+}
+.noticia-item a{
+    text-decoration: none;
+    color: black;
+}
+.noticia-imagem{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #cccccc;
+    padding: 3px;
+    float: left;
+}
+.noticia-titulo{
+    width: 206px;
+    margin-left: 10px;
+    font-size: 16px;
+    float: left;
+}
+.noticia-info{
+    width: 206px;
+    text-align: left;
+    font-size: 12px;
+    margin-left: 10px;
+    float: left;
+}
+
+@media only screen and (min-width: 975px) and (max-width:1110px){
+    .topo-int,
+    .topo2-int,
+    .menu-int,
+    .ultimas_noticias_int,
+    .container-int {
+        max-width:890px;
+    }
+    .container-int-esq{
+        width: 600px;
+    }
+    .noticia-area1{
+        width: 278px;
+    }
+    .noticia-item-grande .noticia-imagem{
+        width: 245px;
+    }   
+    .noticia-item-grande .noticia-imagem img{
+        width: 245px;
+    }   
+    .noticia-item-grande .noticia-titulo{
+        width: 245px;
+        font-size: 25px;
+    }   
+}
+
+@media only screen and (min-width: 770px) and (max-width: 974px) {
+    .topo-int,
+    .topo2-int,
+    .menu-int,
+    .ultimas_noticias_int,
+    .container-int {
+        max-width:768px;
+    }
+    .container-int-esq{
+        width: 600px;
+    }
+    .noticia-area1{
+        width: 278px;
+    }
+    .noticia-item-grande .noticia-imagem{
+        width: 400px;
+    }   
+    .noticia-item-grande .noticia-imagem img{
+        width: 400;
+    }   
+    .noticia-item-grande .noticia-titulo{
+        width: 245px;
+        font-size: 25px;
+    }   
+    .topo2-int .banner{
+        display: none;
+    }
+    .logo{
+        float: none;
+        margin: auto;
+    }
+    .container-int-dir{
+        display: none;
+    }
+    .container-int-esq{
+        float: none;
+        width: auto;
+    }
+    .noticia-area1{
+        width: 415px;
+    }
+    .noticia-item-grande img{
+        width: 700px;
+    }
+    .noticia-item-grande .noticia-imagem img{
+        width: 400px;
+    }
+    .noticia-item-grande .noticia-imagem{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .topo-int,
+    .topo2-int,
+    .menu-int,
+    .ultimas_noticias_int,
+    .container-int {
+        max-width:320px;
+        margin-top: 10px;
+    }
+    .container-int-esq{
+        width: 600px;
+    }
+    .noticia-area1{
+        width: 278px;
+    }
+    .noticia-item-grande .noticia-imagem{
+        width: 400px;
+    }   
+    .noticia-item-grande .noticia-titulo{
+        width: 245px;
+        font-size: 25px;
+    }   
+    .topo2-int .banner{
+        display: none;
+    }
+    .logo{
+        float: none;
+        margin: auto;
+    }
+    .container-int-dir{
+        display: none;
+    }
+    .container-int-esq{
+        float: none;
+        width: auto;
+    }
+    .noticia-area1{
+        width: auto;
+    }
+    .noticia-item-grande .noticia-imagem {
+        width: 289px;
+    }
+    .noticia-item-grande .noticia-imagem img {
+        width: 289px;
+    }
+    .topo-left {
+        display: none;
+    }
+    .topo-right{
+        width: 100%;
+    }
+    .topo-right input {
+        padding-right: 24px;
+    }
+    .logo img{
+        margin-top: 8px;
+    }
+    .menu-int{
+        /* display: none; */
+    }
+    .menu-int ul {
+        background-color: red;
+        position: absolute;
+        z-index: 10;
+        display: none;
+    }
+    .menu-int li {
+        float: none;
+        height: auto;
+    }
+    .menu-int li img{
+        display: none;
+    }
+    .topo2 .ultimas_noticias{
+        display: none;
+    }
+    .noticia-area2 {
+        margin-top: 30px;
+    }
+    .submenu{       
+        display: block;
+        position: static;
+    }
+    .submenu-item{
+        padding-left: 10px;
+    }
+    .menu-mobile{
+        display: block;
+        /* margin-top: 5px; */
+        /* line-height: 35px; */
+    }
+}

@@ -1,0 +1,271 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+    <title>Portal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script text="text/javascript" src="assets/js/script.js"></script>
+    
+</head>
+<body>
+    <div class="topo">
+        <div class="topo-int">
+            <div class="topo-left">
+                <ul>
+                    <li><a href="./" class="ativo">Home</a></li>
+                    <li><a href="Quem Somos">Quem Somos</a></li>
+                    <li><a href="Anuncie Aqui">Anuncie Aqui</a></li>
+                    <li><a href="Contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="topo-right">
+                <input type="image" src="assets/images/lupa_branca2.png" border="0" width="26" height="26">
+                <input class="topo-busca" type="text" name="busca" placeholder="Busca...">
+                <a href=""><img src="assets/images/youtube.png" border="0" width="26" height="26"></a>
+                <a href=""><img src="assets/images/Twitter2.png" border="0" width="26" height="26"></a>
+                <a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+                <a href=""><img src="assets/images/google_plus.png" border="0" width="26" height="26"></a>
+                <a href=""><img src="assets/images/rss3.png" border="0" width="26" height="26"></a>
+            </div>
+        </div>
+    </div>
+    <div class="topo2">
+        <div class="topo2-int">
+            <div class="logo">
+                <img src="assets/images/mega_portal2.jpg" width="230" height="80">
+            </div>
+            <div class="banner">PROPAGANDA
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-int">
+                <img class="menu-mobile" src="assets/images/menu-mobile.png" width="35" height="35" onclick="abriMenuMobile()"> 
+                <ul id="menu">
+                    <li><a href="./" class="ativo">Home</a></li>
+                    <li><a href="Quem Somos">Economia</a></li>
+                    <li>
+                        <a href="Anuncie Aqui">Entretenimento</a>
+                        <img src="assets/images/setinha2.png" width="7px" height="7px">
+                        <div class="submenu">
+                            <div>
+                                <a href=""><div class="submenu-item">Item1</div></a>
+                                <a href=""><div class="submenu-item">Item2</div></a>
+                                <a href=""><div class="submenu-item">Item3</div></a>
+                                <a href=""><div class="submenu-item">Item4</div></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="Anuncie Aqui">Esportes</a>
+                        <img src="assets/images/setinha2.png" width="7px" height="7px">
+                        <div class="submenu">
+                            <div>
+                                    <a href=""><div class="submenu-item">Item1</div></a>
+                                    <a href=""><div class="submenu-item">Item2</div></a>
+                                    <a href=""><div class="submenu-item">Item3</div></a>
+                                    <a href=""><div class="submenu-item">Item4</div></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./" class="ativo">Geral</a></li>
+                    <li>
+                        <a href="Anuncie Aqui">Notícias</a>
+                        <img src="assets/images/setinha2.png" width="7px" height="7px">
+                        <div class="submenu">
+                            <div>
+                                    <a href=""><div class="submenu-item">Item1</div></a>
+                                    <a href=""><div class="submenu-item">Item2</div></a>
+                                    <a href=""><div class="submenu-item">Item3</div></a>
+                                    <a href=""><div class="submenu-item">Item4</div></a>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li><a href="./" class="ativo">Polícia</a></li>
+                    <li><a href="./" class="ativo">Vídeos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ultimas_noticias">
+            <div class="ultimas_noticias_int">
+                <div class="ultimas_noticias_area">
+                    <div class="ultimas_noticias_titulo">ÚLTIMAS NOTÍCIAS</div>
+                    <div class="ultimas_noticias_noticia">Isso aqui é Fake News!</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-int">
+                <div class="container-int-esq"> <!-- LADO ESQUERDO DO CONTEÚDO PRINCIPAL-->
+                    <div class="slide-show" id="slide-show"> <!-- SLIDES -->
+                        <div class="slide-bolinhas">
+                            <div class="bolinha" id="bolinha" data-bola="0" onclick="mudarSlide(0)"></div>
+                            <div class="bolinha" id="bolinha" onclick="mudarSlide(1)"></div>
+                            <div class="bolinha" id="bolinha" onclick="mudarSlide(2)"></div>
+                            <div class="bolinha" id="bolinha" onclick="mudarSlide(3)"></div>
+                        </div>
+                        <div class="slide-show-area">
+                            <a href="https://pt.wikipedia.org/wiki/Barack_Obama">
+                                <div class="slide" style="background-image:url('assets/images/Barack Obama.jpg')">
+                                    <div class="slide-info">
+                                        <div class="slide-info-titulo">Titulo de teste 1</div>
+                                        <div class="slide-info-subtitulo">Subtitulo de teste 1</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=xmDu62ROULI">
+                                <div class="slide" style="background-image:url('assets/images/luta.jpg')">
+                                    <div class="slide-info">
+                                        <div class="slide-info-titulo">Titulo de teste 2</div>
+                                        <div class="slide-info-subtitulo">Subtitulo de teste 2</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.google.com/">
+                                <div class="slide" style="background-image:url('data:image/png;base64,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')">
+                                    <div class="slide-info">
+                                        <div class="slide-info-titulo">Titulo de teste 3</div>
+                                        <div class="slide-info-subtitulo">Subtitulo de teste 3</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=xmDu62ROULI">
+                                <div class="slide" style="background-image:url('assets/images/luta.jpg')">
+                                    <div class="slide-info">
+                                        <div class="slide-info-titulo">Titulo de teste 4</div>
+                                        <div class="slide-info-subtitulo">Subtitulo de teste 4</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>   <!-- FIM DOS SLIDES -->
+                    <div class="widget">
+                        <div class="widget-titulo">NOTÍCIAS</div>
+                        <div class="widget-conteudo">
+                            <div class="noticia-area1 noticia-item-grande">
+                                <div class="noticia-imagem">
+                                    <img src="" border="0">
+                                </div>
+                                <div class="noticia-titulo">Algum título qualquer</div>
+                                <div class="noticia-info">Varios comentários</div>
+                            </div>
+                            <div class="noticia-area2">
+                                <div class="noticia-item">
+                                    <div class="noticia-imagem">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticia-titulo">Algum título qualquer</div>
+                                    <div class="noticia-info">Varios comentários</div>
+                                </div>
+                                <div class="noticia-item">
+                                    <div class="noticia-imagem">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticia-titulo">Algum título qualquer</div>
+                                    <div class="noticia-info">Varios comentários</div>
+                                </div>
+                                <div class="noticia-item">
+                                    <div class="noticia-imagem">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticia-titulo">Algum título qualquer</div>
+                                    <div class="noticia-info">Varios comentários</div>
+                                </div>
+                                <div class="noticia-item">
+                                    <div class="noticia-imagem">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticia-titulo">Algum título qualquer</div>
+                                    <div class="noticia-info">Varios comentários</div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-titulo">NOTÍCIAS</div>
+                        <div class="widget-conteudo">
+                            <div class="noticia-area1 noticia-item-grande">
+                                <div class="noticia-imagem">
+                                    <img src="" border="0">
+                                </div>
+                                <div class="noticia-titulo">Algum título qualquer</div>
+                                <div class="noticia-info">Varios comentários</div>
+                            </div>
+                            <div class="noticia-area2">
+                                <div class="noticia-item">
+                                    <div class="noticia-imagem">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticia-titulo">Algum título qualquer</div>
+                                    <div class="noticia-info">Varios comentários</div>
+                                </div>
+                                <div class="noticia-item">
+                                    <div class="noticia-imagem">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticia-titulo">Algum título qualquer</div>
+                                    <div class="noticia-info">Varios comentários</div>
+                                </div>
+                                <div class="noticia-item">
+                                    <div class="noticia-imagem">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticia-titulo">Algum título qualquer</div>
+                                    <div class="noticia-info">Varios comentários</div>
+                                </div>
+                                <div class="noticia-item">
+                                    <div class="noticia-imagem">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticia-titulo">Algum título qualquer</div>
+                                    <div class="noticia-info">Varios comentários</div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-int-dir">  <!-- LADO DIREITO DO CONTEÚDO PRINCIPAL-->  
+                    <div class="widget">
+                        <div class="widget-titulo">SOCIAL</div>
+                        <div class="widget-conteudo">
+                            <a href=""><img src="assets/images/youtube.png" border="0" width="26" height="26"></a>
+                            <a href=""><img src="assets/images/Twitter2.png" border="0" width="26" height="26"></a>
+                            <a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+                            <a href=""><img src="assets/images/google_plus.png" border="0" width="26" height="26"></a>
+                            <a href=""><img src="assets/images/rss3.png" border="0" width="26" height="26"></a>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-titulo">ÚLTIMAS NOTÍCIAS</div>
+                        <div class="widget-conteudo">
+                            <div class="noticia_item"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officia maxime tempore distinctio quia illo vero autem quod iure earum, error optio rem enim? Mollitia ad modi quae error cumque!</a></div>
+                            <div class="noticia_item"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officia maxime tempore distinctio quia illo vero autem quod iure earum, error optio rem enim? Mollitia ad modi quae error cumque!</a></div>
+                            <div class="noticia_item"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officia maxime tempore distinctio quia illo vero autem quod iure earum, error optio rem enim? Mollitia ad modi quae error cumque!</a></div>
+                            <div class="noticia_item"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officia maxime tempore distinctio quia illo vero autem quod iure earum, error optio rem enim? Mollitia ad modi quae error cumque!</a></div>
+                            <div class="noticia_item"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officia maxime tempore distinctio quia illo vero autem quod iure earum, error optio rem enim? Mollitia ad modi quae error cumque!</a></div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-titulo">PUBLICIDADE</div>
+                        <div class="widget-conteudo">
+                            <img src="assets/images/morena.jpg" width="257" height="257">
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-titulo">ENCONTRE-NOS NO FACEBOOK</div>
+                        <div class="widget-conteudo">
+                            <!-- PLUGIN DE PÁGINA RETIRADO DO "FACEBOOK FOR DEVELOPERS" NO ENDEREÇO https://developers.facebook.com/docs/plugins/page-plugin ,
+                                 NA ABA "IFRAME". CASO SEJA NECESSÁRIO VOCÊ PODE EDITAR LAGUNS ATRIBUTOS COMO A LARGURA, ALTURA E MUITOS OUTROS QUE ESTÃO NO CÓDIGO QUE VOCÊ VAI COPIAR E QUE 
+                                 ESTARÁ DENTRO DA TAG "<iframe>"  -->
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDore-Produtos-321964278000250%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=414952785204853" width="275" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div> <!-- FIM DO LADO DIREITO DO CONTEÚDO PRINCIPAL-->  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
